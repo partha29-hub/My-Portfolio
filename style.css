@@ -615,3 +615,2487 @@ font-size:1.4rem;
 }
 
 }
+
+/* ==========================================
+             EDUCATION SECTION
+========================================== */
+
+.education {
+
+    min-height: 100vh;
+
+    background: #000;
+
+    padding: 100px 8%;
+
+}
+
+
+/* =========================
+       EDUCATION TITLE
+========================= */
+
+.education-title {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+
+}
+
+.education-title h2 {
+
+    font-size: 4.5rem;
+
+    font-weight: 700;
+
+}
+
+.education-title span {
+
+    color: #b74b4b;
+
+}
+
+.education-title p {
+
+    color: #bdbdbd;
+
+    font-size: 1.7rem;
+
+    margin-top: 15px;
+
+}
+
+
+/* =========================
+       EDUCATION CONTAINER
+========================= */
+
+.education-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    position: relative;
+
+}
+
+
+/* Red vertical timeline */
+
+.education-container::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 35px;
+
+    top: 0;
+
+    width: 3px;
+
+    height: 100%;
+
+    background: #b74b4b;
+
+    box-shadow: 0 0 15px rgba(183,75,75,.5);
+
+}
+
+
+/* =========================
+       EDUCATION CARD
+========================= */
+
+.education-card {
+
+    position: relative;
+
+    display: flex;
+
+    gap: 30px;
+
+    margin-bottom: 40px;
+
+    padding: 30px 35px 30px 0;
+
+}
+
+
+/* =========================
+       ICON
+========================= */
+
+.education-icon {
+
+    min-width: 70px;
+
+    height: 70px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #111;
+
+    border: 2px solid #b74b4b;
+
+    z-index: 2;
+
+    box-shadow: 0 0 20px rgba(183,75,75,.25);
+
+}
+
+.education-icon i {
+
+    font-size: 28px;
+
+    color: #b74b4b;
+
+}
+
+
+/* =========================
+       CONTENT
+========================= */
+
+.education-content {
+
+    flex: 1;
+
+    background: rgba(255,255,255,.04);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius: 18px;
+
+    padding: 28px;
+
+    transition: .4s ease;
+
+}
+
+
+.education-content:hover {
+
+    transform: translateX(8px);
+
+    border-color: #b74b4b;
+
+    box-shadow: 0 0 25px rgba(183,75,75,.25);
+
+}
+
+
+/* =========================
+       YEAR
+========================= */
+
+.education-year {
+
+    display: inline-block;
+
+    color: #b74b4b;
+
+    font-size: 1.4rem;
+
+    font-weight: 600;
+
+    border: 1px solid #b74b4b;
+
+    padding: 5px 14px;
+
+    border-radius: 20px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================
+       HEADING
+========================= */
+
+.education-content h3 {
+
+    font-size: 2.4rem;
+
+    margin-bottom: 8px;
+
+}
+
+
+.education-content h4 {
+
+    color: #b74b4b;
+
+    font-size: 1.7rem;
+
+    margin-bottom: 12px;
+
+}
+
+
+.education-content p {
+
+    color: #d0d0d0;
+
+    font-size: 1.5rem;
+
+    line-height: 1.7;
+
+}
+
+
+.education-description {
+
+    margin-top: 12px;
+
+    color: #aaa !important;
+
+}
+
+
+/* =========================
+          MOBILE
+========================= */
+
+@media(max-width:768px) {
+
+    .education {
+
+        padding: 80px 5%;
+
+    }
+
+    .education-title h2 {
+
+        font-size: 3.5rem;
+
+    }
+
+    .education-container::before {
+
+        left: 25px;
+
+    }
+
+    .education-card {
+
+        gap: 20px;
+
+        padding-right: 0;
+
+    }
+
+    .education-icon {
+
+        min-width: 52px;
+
+        height: 52px;
+
+    }
+
+    .education-icon i {
+
+        font-size: 20px;
+
+    }
+
+    .education-content {
+
+        padding: 20px;
+
+    }
+
+    .education-content h3 {
+
+        font-size: 1.9rem;
+
+    }
+
+    .education-content h4 {
+
+        font-size: 1.5rem;
+
+    }
+
+    .education-content p {
+
+        font-size: 1.4rem;
+
+    }
+
+}
+
+/* ==========================================
+             EXPERIENCE SECTION
+========================================== */
+
+.experience {
+
+    min-height: 100vh;
+
+    background: #050505;
+
+    padding: 100px 8%;
+
+}
+
+
+/* =========================
+       EXPERIENCE TITLE
+========================= */
+
+.experience-title {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.experience-title h2 {
+
+    font-size: 4.5rem;
+
+    font-weight: 700;
+
+}
+
+.experience-title span {
+
+    color: #b74b4b;
+
+}
+
+.experience-title p {
+
+    color: #bdbdbd;
+
+    font-size: 1.7rem;
+
+    margin-top: 15px;
+
+}
+
+
+/* =========================
+       EXPERIENCE CONTAINER
+========================= */
+
+.experience-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* =========================
+       EXPERIENCE CARD
+========================= */
+
+.experience-card {
+
+    background: rgba(255,255,255,.04);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    transition: .4s ease;
+
+}
+
+
+/* Card Hover */
+
+.experience-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: #b74b4b;
+
+    box-shadow: 0 0 30px rgba(183,75,75,.30);
+
+}
+
+
+/* =========================
+       EXPERIENCE ICON
+========================= */
+
+.experience-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #111;
+
+    border: 2px solid #b74b4b;
+
+    box-shadow: 0 0 20px rgba(183,75,75,.25);
+
+}
+
+
+.experience-icon i {
+
+    font-size: 30px;
+
+    color: #b74b4b;
+
+}
+
+
+/* =========================
+       EXPERIENCE DATE
+========================= */
+
+.experience-date {
+
+    display: inline-block;
+
+    color: #b74b4b;
+
+    border: 1px solid #b74b4b;
+
+    padding: 5px 14px;
+
+    border-radius: 20px;
+
+    font-size: 1.3rem;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================
+       JOB TITLE
+========================= */
+
+.experience-card h3 {
+
+    font-size: 2.2rem;
+
+    margin-bottom: 8px;
+
+    color: white;
+
+}
+
+
+/* =========================
+       COMPANY
+========================= */
+
+.experience-card h4 {
+
+    color: #b74b4b;
+
+    font-size: 1.7rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================
+       DESCRIPTION
+========================= */
+
+.experience-card > p {
+
+    color: #cfcfcf;
+
+    font-size: 1.4rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================
+       TECHNOLOGY TAGS
+========================= */
+
+.experience-skills {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 8px;
+
+}
+
+
+.experience-skills span {
+
+    color: #ddd;
+
+    background: #111;
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    padding: 6px 11px;
+
+    border-radius: 20px;
+
+    font-size: 1.2rem;
+
+    transition: .3s ease;
+
+}
+
+
+.experience-skills span:hover {
+
+    color: #000;
+
+    background: #b74b4b;
+
+    border-color: #b74b4b;
+
+}
+
+
+/* =========================
+          TABLET
+========================= */
+
+@media(max-width:1000px) {
+
+    .experience-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================
+          MOBILE
+========================= */
+
+@media(max-width:700px) {
+
+    .experience {
+
+        padding: 80px 5%;
+
+    }
+
+    .experience-title h2 {
+
+        font-size: 3.5rem;
+
+    }
+
+    .experience-title p {
+
+        font-size: 1.5rem;
+
+    }
+
+    .experience-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .experience-card {
+
+        padding: 25px;
+
+    }
+
+}
+
+/* ==========================================
+             PROJECTS SECTION
+========================================== */
+
+.projects {
+
+    min-height: 100vh;
+
+    background: #000;
+
+    padding: 100px 8%;
+
+}
+
+
+/* =========================
+       PROJECT TITLE
+========================= */
+
+.projects-title {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.projects-title h2 {
+
+    font-size: 4.5rem;
+
+    font-weight: 700;
+
+}
+
+.projects-title span {
+
+    color: #b74b4b;
+
+}
+
+.projects-title p {
+
+    color: #bdbdbd;
+
+    font-size: 1.7rem;
+
+    margin-top: 15px;
+
+}
+
+
+/* =========================
+       PROJECT CONTAINER
+========================= */
+
+.projects-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* =========================
+       PROJECT CARD
+========================= */
+
+.project-card {
+
+    position: relative;
+
+    background: rgba(255,255,255,.04);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    transition: .4s ease;
+
+    overflow: hidden;
+
+}
+
+
+/* Red glow */
+
+.project-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+
+    height: 150px;
+
+    background: rgba(183,75,75,.12);
+
+    border-radius: 50%;
+
+    top: -70px;
+
+    right: -70px;
+
+    transition: .4s ease;
+
+}
+
+
+.project-card:hover::before {
+
+    transform: scale(2);
+
+}
+
+
+/* Card Hover */
+
+.project-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: #b74b4b;
+
+    box-shadow: 0 0 30px rgba(183,75,75,.25);
+
+}
+
+
+/* =========================
+       PROJECT ICON
+========================= */
+
+.project-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #111;
+
+    border: 2px solid #b74b4b;
+
+    margin-bottom: 20px;
+
+}
+
+
+.project-icon i {
+
+    font-size: 27px;
+
+    color: #b74b4b;
+
+}
+
+
+/* =========================
+       PROJECT NUMBER
+========================= */
+
+.project-number {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 30px;
+
+    color: #b74b4b;
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    opacity: .6;
+
+}
+
+
+/* =========================
+       PROJECT HEADING
+========================= */
+
+.project-card h3 {
+
+    font-size: 2.4rem;
+
+    margin-bottom: 15px;
+
+    color: white;
+
+}
+
+
+/* =========================
+       PROJECT DESCRIPTION
+========================= */
+
+.project-card > p {
+
+    color: #cfcfcf;
+
+    font-size: 1.5rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================
+       TECHNOLOGIES
+========================= */
+
+.project-tech {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.project-tech span {
+
+    color: #ddd;
+
+    background: #111;
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 1.2rem;
+
+    transition: .3s ease;
+
+}
+
+
+.project-tech span:hover {
+
+    color: #000;
+
+    background: #b74b4b;
+
+    border-color: #b74b4b;
+
+}
+
+
+/* =========================
+       PROJECT BUTTONS
+========================= */
+
+.project-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+}
+
+
+.project-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 17px;
+
+    border: 1px solid #b74b4b;
+
+    border-radius: 25px;
+
+    color: #b74b4b;
+
+    font-size: 1.3rem;
+
+    transition: .3s ease;
+
+}
+
+
+.project-btn:hover {
+
+    background: #b74b4b;
+
+    color: #000;
+
+    box-shadow: 0 0 15px rgba(183,75,75,.5);
+
+}
+
+
+/* =========================
+          TABLET
+========================= */
+
+@media(max-width:850px) {
+
+    .projects-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/* =========================
+          MOBILE
+========================= */
+
+@media(max-width:600px) {
+
+    .projects {
+
+        padding: 80px 5%;
+
+    }
+
+    .projects-title h2 {
+
+        font-size: 3.5rem;
+
+    }
+
+    .projects-title p {
+
+        font-size: 1.5rem;
+
+    }
+
+    .project-card {
+
+        padding: 25px;
+
+    }
+
+    .project-card h3 {
+
+        font-size: 2rem;
+
+    }
+
+    .project-card > p {
+
+        font-size: 1.4rem;
+
+    }
+
+    .project-buttons {
+
+        flex-wrap: wrap;
+
+    }
+
+}
+
+/* ==========================================
+             CONTACT SECTION
+========================================== */
+
+.contact {
+
+    min-height: 100vh;
+
+    background: #050505;
+
+    padding: 100px 8%;
+
+}
+
+
+/* =========================
+       CONTACT TITLE
+========================= */
+
+.contact-title {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.contact-title h2 {
+
+    font-size: 4.5rem;
+
+    font-weight: 700;
+
+}
+
+.contact-title span {
+
+    color: #b74b4b;
+
+}
+
+.contact-title p {
+
+    color: #bdbdbd;
+
+    font-size: 1.7rem;
+
+    margin-top: 15px;
+
+}
+
+
+/* =========================
+       CONTACT CONTAINER
+========================= */
+
+.contact-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+
+}
+
+
+/* =========================
+       CONTACT INFO
+========================= */
+
+.contact-info {
+
+    background: rgba(255,255,255,.04);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+}
+
+
+.contact-info h3 {
+
+    font-size: 2.8rem;
+
+    margin-bottom: 15px;
+
+}
+
+
+.contact-info > p {
+
+    color: #cfcfcf;
+
+    font-size: 1.5rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================
+       CONTACT ITEM
+========================= */
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin: 25px 0;
+
+}
+
+
+.contact-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    min-width: 50px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #111;
+
+    border: 1px solid #b74b4b;
+
+}
+
+
+.contact-icon i {
+
+    color: #b74b4b;
+
+    font-size: 1.8rem;
+
+}
+
+
+.contact-item h4 {
+
+    font-size: 1.5rem;
+
+    color: #b74b4b;
+
+    margin-bottom: 3px;
+
+}
+
+
+.contact-item p {
+
+    color: #ddd;
+
+    font-size: 1.4rem;
+
+}
+
+
+/* =========================
+       SOCIAL ICONS
+========================= */
+
+.contact-social {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+}
+
+
+.contact-social a {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #b74b4b;
+
+    border-radius: 50%;
+
+    color: #b74b4b;
+
+    font-size: 1.8rem;
+
+    transition: .3s ease;
+
+}
+
+
+.contact-social a:hover {
+
+    background: #b74b4b;
+
+    color: #000;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 0 18px rgba(183,75,75,.5);
+
+}
+
+
+/* =========================
+       CONTACT FORM
+========================= */
+
+.contact-form {
+
+    background: rgba(255,255,255,.04);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    backdrop-filter: blur(15px);
+
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+}
+
+
+.input-box {
+
+    margin-bottom: 18px;
+
+}
+
+
+.input-box input,
+.input-box textarea {
+
+    width: 100%;
+
+    padding: 15px 18px;
+
+    background: #111;
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    border-radius: 10px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 1.4rem;
+
+    transition: .3s ease;
+
+}
+
+
+.input-box textarea {
+
+    resize: none;
+
+}
+
+
+.input-box input:focus,
+.input-box textarea:focus {
+
+    border-color: #b74b4b;
+
+    box-shadow: 0 0 12px rgba(183,75,75,.2);
+
+}
+
+
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+
+    color: #777;
+
+}
+
+
+/* =========================
+       SEND BUTTON
+========================= */
+
+.contact-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 13px 25px;
+
+    background: transparent;
+
+    color: #b74b4b;
+
+    border: 2px solid #b74b4b;
+
+    border-radius: 30px;
+
+    font-size: 1.5rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+}
+
+
+.contact-btn:hover {
+
+    background: #b74b4b;
+
+    color: #000;
+
+    box-shadow: 0 0 25px rgba(183,75,75,.5);
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================
+             FOOTER
+========================= */
+
+.footer {
+
+    background: #000;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    text-align: center;
+
+    padding: 25px;
+
+}
+
+
+.footer p {
+
+    color: #888;
+
+    font-size: 1.4rem;
+
+}
+
+
+.footer span {
+
+    color: #b74b4b;
+
+}
+
+
+/* =========================
+          RESPONSIVE
+========================= */
+
+@media(max-width:800px) {
+
+    .contact {
+
+        padding: 80px 5%;
+
+    }
+
+    .contact-title h2 {
+
+        font-size: 3.5rem;
+
+    }
+
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+    .contact-info,
+    .contact-form {
+
+        padding: 25px;
+
+    }
+
+}
+
+/* =========================================================
+              RESPONSIVE DESIGN
+        MOBILE • TABLET • LAPTOP • DESKTOP
+========================================================= */
+
+
+/* =========================================================
+                    LARGE DESKTOP
+                 1200px and above
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .home {
+        padding: 120px 9%;
+    }
+
+    .home-content {
+        max-width: 650px;
+    }
+
+    .home-img img {
+        width: 360px;
+    }
+
+    .skills,
+    .education,
+    .experience,
+    .projects,
+    .contact {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+}
+
+
+/* =========================================================
+                       LAPTOP
+                   992px - 1199px
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    nav a {
+        margin-left: 2.5rem;
+        font-size: 1.6rem;
+    }
+
+
+    /* HOME */
+
+    .home {
+        gap: 5rem;
+        padding: 110px 6%;
+    }
+
+    .home .home-content h1 {
+        font-size: 4.8rem;
+    }
+
+    .home-content h3 {
+        font-size: 3.2rem;
+    }
+
+    .home-content p {
+        font-size: 1.6rem;
+    }
+
+    .home-img img {
+        width: 35vw;
+        max-width: 360px;
+    }
+
+
+    /* SKILLS */
+
+    .skills-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* EXPERIENCE */
+
+    .experience-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* PROJECTS */
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+                       TABLET
+                    768px - 991px
+========================================================= */
+
+@media (max-width: 991px) {
+
+    /* HEADER */
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        font-size: 2.7rem;
+    }
+
+
+    /* NAVBAR */
+
+    nav a {
+        margin-left: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+
+    /* HOME */
+
+    .home {
+        gap: 4rem;
+        padding: 120px 5% 70px;
+    }
+
+    .home .home-content h1 {
+        font-size: 4.2rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.8rem;
+    }
+
+    .home-content p {
+        font-size: 1.5rem;
+    }
+
+
+    .home-img img {
+        width: 38vw;
+        max-width: 320px;
+    }
+
+
+    /* SKILLS */
+
+    .skills {
+        padding: 90px 6%;
+    }
+
+    .skills-title h2 {
+        font-size: 4rem;
+    }
+
+
+    /* EDUCATION */
+
+    .education {
+        padding: 90px 6%;
+    }
+
+
+    /* EXPERIENCE */
+
+    .experience {
+        padding: 90px 6%;
+    }
+
+    .experience-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* PROJECTS */
+
+    .projects {
+        padding: 90px 6%;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        padding: 90px 6%;
+    }
+
+}
+
+
+/* =========================================================
+                       MOBILE
+                    767px and below
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* ================= HEADER ================= */
+
+    header {
+        margin-top: 0;
+
+        padding: 1.5rem 5%;
+
+        background: rgba(0, 0, 0, .9);
+
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+    }
+
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+
+    /* ================= NAVBAR ================= */
+
+    nav {
+        display: flex;
+
+        flex-direction: column;
+
+        position: absolute;
+
+        top: 70px;
+        right: 5%;
+
+        width: 90%;
+
+        background: #111;
+
+        border: 1px solid #b74b4b;
+
+        border-radius: 15px;
+
+        padding: 15px;
+
+        gap: 5px;
+
+        box-shadow: 0 0 25px rgba(183, 75, 75, .25);
+
+        z-index: 999;
+    }
+
+
+    nav a {
+
+        display: block;
+
+        margin: 0;
+
+        padding: 12px;
+
+        text-align: center;
+
+        font-size: 1.6rem;
+
+        border-radius: 8px;
+
+        border-bottom: none;
+    }
+
+
+    nav a:hover,
+    nav a.active {
+
+        background: rgba(183, 75, 75, .12);
+
+        border-bottom: none;
+
+        color: #b74b4b;
+    }
+
+
+    /* ================= GENERAL ================= */
+
+    section {
+        min-height: auto;
+
+        scroll-margin-top: 80px;
+    }
+
+
+    /* ================= HOME ================= */
+
+    .home {
+
+        min-height: 100vh;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        text-align: center;
+
+        gap: 30px;
+
+        padding: 120px 6% 60px;
+
+        margin: 0;
+    }
+
+
+    .home-img {
+
+        order: 1;
+    }
+
+
+    .home-content {
+
+        order: 2;
+
+        width: 100%;
+    }
+
+
+    .home-img img {
+
+        width: 65vw;
+
+        max-width: 280px;
+
+        min-width: 200px;
+    }
+
+
+    .home .home-content h1 {
+
+        font-size: 3.7rem;
+
+        line-height: 1.3;
+    }
+
+
+    .home-content h3 {
+
+        font-size: 2.5rem;
+
+        margin-top: 10px;
+    }
+
+
+    .typing-text {
+
+        min-width: 0;
+
+        font-size: 2.5rem;
+    }
+
+
+    .home-content p {
+
+        font-size: 1.45rem;
+
+        line-height: 1.8;
+
+        margin: 18px 0;
+    }
+
+
+    /* SOCIAL */
+
+    .social-icons {
+
+        display: flex;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    .social-icons a {
+
+        width: 4rem;
+
+        height: 4rem;
+
+        margin: 1.5rem .7rem;
+    }
+
+
+    .btn {
+
+        font-size: 1.4rem;
+
+        padding: 1rem 2.2rem;
+    }
+
+
+    /* ================= SKILLS ================= */
+
+    .skills {
+
+        padding: 80px 5%;
+    }
+
+
+    .skills-title {
+
+        margin-bottom: 40px;
+    }
+
+
+    .skills-title h2 {
+
+        font-size: 3.5rem;
+    }
+
+
+    .skills-title p {
+
+        font-size: 1.45rem;
+
+        line-height: 1.7;
+    }
+
+
+    .skills-cards {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        margin-top: 35px;
+    }
+
+
+    .skill-card {
+
+        padding: 25px;
+    }
+
+
+    .technical {
+
+        margin-top: 45px;
+
+        padding: 22px;
+
+        border-radius: 15px;
+    }
+
+
+    .technical h3 {
+
+        font-size: 2.5rem;
+    }
+
+
+    .skill {
+
+        grid-template-columns: 75px 1fr 45px;
+
+        gap: 8px;
+
+        margin: 20px 0;
+    }
+
+
+    .skill span {
+
+        font-size: 1.25rem;
+    }
+
+
+    .tools {
+
+        margin-top: 45px;
+    }
+
+
+    .tools h3 {
+
+        font-size: 2.5rem;
+    }
+
+
+    .tools-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+
+    /* ================= EDUCATION ================= */
+
+    .education {
+
+        padding: 80px 5%;
+    }
+
+
+    .education-title h2 {
+
+        font-size: 3.5rem;
+    }
+
+
+    .education-title p {
+
+        font-size: 1.45rem;
+    }
+
+
+    .education-container {
+
+        width: 100%;
+    }
+
+
+    .education-card {
+
+        gap: 15px;
+
+        padding: 20px 0;
+    }
+
+
+    .education-icon {
+
+        min-width: 50px;
+
+        width: 50px;
+
+        height: 50px;
+    }
+
+
+    .education-icon i {
+
+        font-size: 20px;
+    }
+
+
+    .education-content {
+
+        padding: 20px;
+
+        border-radius: 15px;
+    }
+
+
+    .education-content h3 {
+
+        font-size: 1.8rem;
+
+        line-height: 1.4;
+    }
+
+
+    .education-content h4 {
+
+        font-size: 1.4rem;
+    }
+
+
+    .education-content p {
+
+        font-size: 1.3rem;
+    }
+
+
+    /* ================= EXPERIENCE ================= */
+
+    .experience {
+
+        padding: 80px 5%;
+    }
+
+
+    .experience-title h2 {
+
+        font-size: 3.5rem;
+    }
+
+
+    .experience-title p {
+
+        font-size: 1.45rem;
+    }
+
+
+    .experience-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .experience-card {
+
+        padding: 25px;
+
+        border-radius: 17px;
+    }
+
+
+    .experience-icon {
+
+        width: 60px;
+
+        height: 60px;
+    }
+
+
+    .experience-icon i {
+
+        font-size: 24px;
+    }
+
+
+    .experience-card h3 {
+
+        font-size: 2rem;
+
+        line-height: 1.4;
+    }
+
+
+    .experience-card h4 {
+
+        font-size: 1.5rem;
+    }
+
+
+    .experience-card > p {
+
+        font-size: 1.35rem;
+
+        line-height: 1.7;
+    }
+
+
+    .experience-skills span {
+
+        font-size: 1.1rem;
+
+        padding: 5px 9px;
+    }
+
+
+    /* ================= PROJECTS ================= */
+
+    .projects {
+
+        padding: 80px 5%;
+    }
+
+
+    .projects-title h2 {
+
+        font-size: 3.5rem;
+    }
+
+
+    .projects-title p {
+
+        font-size: 1.45rem;
+
+        line-height: 1.7;
+    }
+
+
+    .projects-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .project-card {
+
+        padding: 25px;
+
+        border-radius: 17px;
+    }
+
+
+    .project-card h3 {
+
+        font-size: 2rem;
+
+        line-height: 1.4;
+    }
+
+
+    .project-card > p {
+
+        font-size: 1.35rem;
+
+        line-height: 1.7;
+    }
+
+
+    .project-buttons {
+
+        flex-wrap: wrap;
+    }
+
+
+    /* ================= CONTACT ================= */
+
+    .contact {
+
+        padding: 80px 5%;
+    }
+
+
+    .contact-title h2 {
+
+        font-size: 3.5rem;
+    }
+
+
+    .contact-title p {
+
+        font-size: 1.45rem;
+
+        line-height: 1.7;
+    }
+
+
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    .contact-info,
+    .contact-form {
+
+        padding: 25px;
+
+        border-radius: 17px;
+    }
+
+
+    .contact-info h3 {
+
+        font-size: 2.3rem;
+    }
+
+
+    .contact-info > p {
+
+        font-size: 1.35rem;
+    }
+
+
+    .contact-item {
+
+        gap: 12px;
+    }
+
+
+    .contact-item p {
+
+        font-size: 1.25rem;
+    }
+
+
+    .contact-form input,
+    .contact-form textarea {
+
+        font-size: 1.3rem;
+    }
+
+
+    .contact-btn {
+
+        width: 100%;
+
+        padding: 13px;
+
+        font-size: 1.4rem;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+
+        padding: 20px 10px;
+    }
+
+
+    .footer p {
+
+        font-size: 1.2rem;
+
+        line-height: 1.6;
+    }
+
+}
+
+
+/* =========================================================
+                    SMALL MOBILE
+                    480px and below
+========================================================= */
+
+@media (max-width: 480px) {
+
+    /* HOME */
+
+    .home {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+    }
+
+
+    .home-img img {
+
+        width: 70vw;
+
+        max-width: 250px;
+    }
+
+
+    .home .home-content h1 {
+
+        font-size: 3rem;
+    }
+
+
+    .home-content h3 {
+
+        font-size: 2.1rem;
+    }
+
+
+    .home-content p {
+
+        font-size: 1.35rem;
+    }
+
+
+    /* SKILLS */
+
+    .skills-title h2,
+    .education-title h2,
+    .experience-title h2,
+    .projects-title h2,
+    .contact-title h2 {
+
+        font-size: 3rem;
+    }
+
+
+    .tools-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .skill {
+
+        grid-template-columns: 65px 1fr 40px;
+    }
+
+
+    .skill span {
+
+        font-size: 1.1rem;
+    }
+
+
+    /* EDUCATION */
+
+    .education-card {
+
+        gap: 10px;
+    }
+
+
+    .education-icon {
+
+        min-width: 45px;
+
+        width: 45px;
+
+        height: 45px;
+    }
+
+
+    .education-content {
+
+        padding: 16px;
+    }
+
+
+    .education-content h3 {
+
+        font-size: 1.6rem;
+    }
+
+
+    /* EXPERIENCE */
+
+    .experience-card {
+
+        padding: 20px;
+    }
+
+
+    .experience-card h3 {
+
+        font-size: 1.8rem;
+    }
+
+
+    /* PROJECTS */
+
+    .project-card {
+
+        padding: 20px;
+    }
+
+
+    .project-number {
+
+        right: 20px;
+
+        top: 20px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-info,
+    .contact-form {
+
+        padding: 20px;
+    }
+
+}
+/* ===============================
+   DESKTOP NAVBAR
+================================ */
+
+@media (min-width: 768px) {
+
+    .menu-icon {
+        display: none !important;
+    }
+
+    header nav {
+        display: flex !important;
+        align-items: center;
+    }
+
+}
+
+
+/* ===============================
+   MOBILE NAVBAR
+================================ */
+
+@media (max-width: 767px) {
+
+    .menu-icon {
+        display: block;
+        font-size: 2.8rem;
+        color: #b74b4b;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    header nav {
+        display: none !important;
+
+        position: absolute;
+        top: 70px;
+        right: 5%;
+
+        width: 90%;
+
+        background: #111;
+
+        border: 1px solid #b74b4b;
+        border-radius: 15px;
+
+        padding: 15px;
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    header nav.active {
+        display: flex !important;
+    }
+
+}

@@ -105,3 +105,38 @@ document.documentElement.style.setProperty("--x",e.clientX+"px");
 document.documentElement.style.setProperty("--y",e.clientY+"px");
 
 });
+
+// ===============================
+// Mobile Menu
+// ===============================
+
+const menuIcon = document.getElementById("menu-icon");
+const navbar = document.getElementById("navbar");
+
+menuIcon.addEventListener("click", () => {
+
+    navbar.classList.toggle("active");
+
+    menuIcon.innerHTML = navbar.classList.contains("active")
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+
+});
+
+
+// Close menu after clicking a link
+
+const mobileLinks = document.querySelectorAll("#navbar a");
+
+mobileLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navbar.classList.remove("active");
+
+        menuIcon.innerHTML =
+            '<i class="fa-solid fa-bars"></i>';
+
+    });
+
+});
