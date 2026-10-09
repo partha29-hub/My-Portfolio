@@ -140,3 +140,85 @@ mobileLinks.forEach(link => {
     });
 
 });
+// ======================================
+// CONTACT FORM - MONGODB CONNECTION
+// ======================================
+
+const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", async (e) => {
+
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        const submitButton = contactForm.querySelector("button");
+
+        submitButton.disabled = true;
+
+        submitButton.innerHTML = `
+            Sending...
+            <i class="fa-solid fa-spinner fa-spin"></i>
+        `;
+
+        try {
+
+            const response = await fetch(
+                "http://localhost:5000/api/contact",
+                {
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+
+                    body: JSON.stringify({
+                        name,
+                        email,
+                        subject,
+                        message
+                    })
+                }
+            );
+
+            const data = await response.json();
+
+            if (data.success) {
+
+                formMessage.textContent =
+                    "Message sent successfully! ✅";
+
+                contactForm.reset();
+
+            } else {
+
+                formMessage.textContent =
+                    data.message || "Something went wrong.";
+
+            }
+
+        } catch (error) {
+
+            console.error("Error:", error);
+
+            formMessage.textContent =
+                "Unable to connect to server ❌";
+
+        }
+
+        submitButton.disabled = false;
+
+        submitButton.innerHTML = `
+            Send Message
+            <i class="fa-solid fa-paper-plane"></i>
+        `;
+
+    });
+
+}
