@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>Creative Admin | Partha Goudu</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="creative-dashboard">
+
+  <div class="dashboard creative-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar creative-sidebar">
+      <a href="#overview" class="creative-brand">
+        <span class="brand-mark">P<span>G</span></span>
+        <span class="brand-copy">
+          <strong>PARTHA<span>.</span></strong>
+          <small>CONTROL CENTER</small>
+        </span>
+      </a>
+
+      <div class="sidebar-profile">
+        <div class="profile-glow">
+          <div class="profile-initials">PG</div>
+          <span class="profile-online"></span>
+        </div>
+        <div class="profile-copy">
+          <strong id="adminName">Admin</strong>
+          <span>Portfolio Administrator</span>
+        </div>
+      </div>
+
+      <p class="side-label">WORKSPACE</p>
+      <nav class="creative-nav">
+        <a class="nav-link active" href="#overview">
+          <span class="nav-icon">⌂</span><span>Overview</span>
+          <span class="nav-arrow">↗</span>
+        </a>
+<a class="nav-link" href="#profile">
+    <span class="nav-icon">◉</span>
+    <span>Profile Management</span>
+</a>
+        <a class="nav-link" href="#projects">
+          <span class="nav-icon">▧</span><span>Projects</span>
+        </a>
+        <a class="nav-link" href="#skills">
+          <span class="nav-icon">◇</span><span>Skills</span>
+        </a>
+        <a class="nav-link" href="#experience">
+          <span class="nav-icon">▤</span><span>Experience</span>
+        </a>
+        <a class="nav-link" href="#education">
+          <span class="nav-icon">▣</span><span>Education</span>
+        </a>
+        <a class="nav-link" href="#messages">
+          <span class="nav-icon">✉</span><span>Messages</span>
+          <span class="nav-badge">NEW</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="sidebar-help">
+          <div class="help-icon">✦</div>
+          <strong>Keep creating.</strong>
+          <p>Your next opportunity starts with your work.</p>
+        </div>
+        <button id="logoutButton" class="creative-logout" type="button">
+          <span>↗</span> Sign out
+        </button>
+        <div class="sidebar-version">PG ADMIN <span>•</span> V1.0</div>
+      </div>
+    </aside>
+
+    <!-- MAIN WORKSPACE -->
+    <main class="main-content creative-main">
+
+      <header class="creative-topbar">
+        <div class="breadcrumb">
+          <span>WORKSPACE</span><span class="breadcrumb-slash">/</span>
+          <strong>Dashboard</strong>
+        </div>
+        <div class="topbar-right">
+          <div class="secure-pill"><span></span> SECURE SESSION</div>
+          <a class="view-portfolio" href="../../index.html" target="_blank" rel="noopener noreferrer">
+            View Portfolio <span>↗</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- OVERVIEW -->
+      <section id="overview" class="creative-overview">
+
+        <div class="creative-hero">
+          <div class="hero-grid-pattern"></div>
+          <div class="hero-orb hero-orb-one"></div>
+          <div class="hero-orb hero-orb-two"></div>
+
+          <div class="hero-content">
+            <div class="hero-kicker"><span></span> YOUR DIGITAL SPACE</div>
+            <h1>Make your work<br> <span>stand out.</span></h1>
+            <p>One workspace. Your entire portfolio. Keep your professional story sharp and up to date.</p>
+            <a href="#projects" class="hero-cta">Explore workspace <span>↘</span></a>
+          </div>
+
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-ring ring-outer"></div>
+            <div class="art-ring ring-middle"></div>
+            <div class="art-ring ring-inner"></div>
+            <div class="art-core">PG<span>.</span></div>
+            <div class="art-dot dot-one"></div>
+            <div class="art-dot dot-two"></div>
+            <div class="art-dot dot-three"></div>
+            <div class="art-caption">BUILD<br>YOUR LEGACY</div>
+          </div>
+
+          <div class="hero-index">01 <span>/ 06</span></div>
+        </div>
+
+        <div class="section-heading overview-heading">
+          <div>
+            <p class="creative-eyebrow">AT A GLANCE</p>
+            <h2>Workspace overview<span>.</span></h2>
+          </div>
+          <div class="overview-note"><span></span> YOUR PORTFOLIO CONTROL PANEL</div>
+        </div>
+
+        <div class="stats-grid creative-stats">
+          <article class="stat-card creative-stat">
+            <div class="stat-top">
+              <span class="stat-icon">▧</span>
+              <span class="stat-tag">WORK</span>
+            </div>
+            <p>Projects</p>
+            <h2 class="counter" data-count="0">0</h2>
+            <div class="stat-footer"><span class="stat-line"></span><small>Portfolio projects</small></div>
+          </article>
+
+          <article class="stat-card creative-stat">
+            <div class="stat-top">
+              <span class="stat-icon">◇</span>
+              <span class="stat-tag">TECH</span>
+            </div>
+            <p>Skills</p>
+            <h2 class="counter" data-count="0">0</h2>
+            <div class="stat-footer"><span class="stat-line"></span><small>Technical capabilities</small></div>
+          </article>
+
+          <article class="stat-card creative-stat">
+            <div class="stat-top">
+              <span class="stat-icon">▤</span>
+              <span class="stat-tag">CAREER</span>
+            </div>
+            <p>Experience</p>
+            <h2 class="counter" data-count="0">0</h2>
+            <div class="stat-footer"><span class="stat-line"></span><small>Career milestones</small></div>
+          </article>
+
+          <article class="stat-card creative-stat">
+            <div class="stat-top">
+              <span class="stat-icon">✉</span>
+              <span class="stat-tag">INBOX</span>
+            </div>
+            <p>Messages</p>
+            <h2 class="counter" data-count="0">0</h2>
+            <div class="stat-footer"><span class="stat-line"></span><small>Contact enquiries</small></div>
+          </article>
+        </div>
+
+        <div class="creative-lower-grid">
+          <article class="focus-card">
+            <div class="focus-top">
+              <div>
+                <p class="creative-eyebrow">YOUR NEXT MOVE</p>
+                <h3>Build something<br><span>remarkable.</span></h3>
+              </div>
+              <div class="focus-symbol">✳</div>
+            </div>
+            <p class="focus-description">Keep your projects, skills and experience current so visitors can see what you do best.</p>
+            <a href="#projects" class="text-link">Manage your work <span>→</span></a>
+          </article>
+
+          <article class="session-card">
+            <p class="creative-eyebrow">SECURITY</p>
+            <h3>Session status</h3>
+            <div class="session-status"><span></span> Authenticated</div>
+            <div class="session-divider"></div>
+            <div class="session-detail"><span>Access</span><strong>Admin</strong></div>
+            <div class="session-detail"><span>Authentication</span><strong>JWT protected</strong></div>
+            <div class="session-detail"><span>Session storage</span><strong>Current tab</strong></div>
+          </article>
+        </div>
+      </section>
+      
+<!-- PROFILE MANAGEMENT -->
+
+<section id="profile" class="dashboard-section">
+    <div>
+        <p class="creative-eyebrow">01 / PROFILE SETTINGS</p>
+        <h2>Profile<span>.</span></h2>
+        <p>Manage the information displayed on your portfolio.</p>
+    </div>
+
+    <p id="profileStatus"
+       class="project-status"
+       role="status"
+       aria-live="polite"></p>
+
+    <!-- Profile details -->
+    <div class="project-form-card">
+        <h3>Personal Information</h3>
+
+        <form id="profileForm">
+            <div class="project-fields">
+                <div class="project-field">
+                    <label for="profileNameInput">Full Name</label>
+                    <input type="text" id="profileNameInput"
+                           maxlength="100" required>
+                </div>
+
+                <div class="project-field">
+                    <label for="profileTitleInput">Professional Title</label>
+                    <input type="text" id="profileTitleInput"
+                           maxlength="150" required>
+                </div>
+
+                <div class="project-field full-width">
+                    <label for="profileAboutInput">About Me</label>
+                    <textarea id="profileAboutInput"
+                              rows="5" maxlength="3000" required></textarea>
+                </div>
+
+                <div class="project-field">
+                    <label for="linkedinInput">LinkedIn URL</label>
+                    <input type="url" id="linkedinInput"
+                           placeholder="https://linkedin.com/in/...">
+                </div>
+
+                <div class="project-field">
+                    <label for="githubInput">GitHub URL</label>
+                    <input type="url" id="githubInput"
+                           placeholder="https://github.com/...">
+                </div>
+
+                <div class="project-field">
+                    <label for="twitterInput">X / Twitter URL</label>
+                    <input type="url" id="twitterInput"
+                           placeholder="https://x.com/...">
+                </div>
+
+                <div class="project-field">
+                    <label for="instagramInput">Instagram URL</label>
+                    <input type="url" id="instagramInput"
+                           placeholder="https://instagram.com/...">
+                </div>
+            </div>
+
+            <div class="project-form-actions">
+                <button type="submit" id="saveProfileBtn">
+                    Save Profile
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Profile photo -->
+    <div class="project-form-card">
+        <h3>Profile Photo</h3>
+        <p>Choose a JPG, PNG or WebP image (maximum 5 MB).</p>
+
+        <form id="profileImageForm" enctype="multipart/form-data">
+            <div class="project-fields">
+                <div class="project-field full-width">
+                    <label for="profileImageFile">Choose Photo</label>
+                    <input type="file"
+                           id="profileImageFile"
+                           name="profileImage"
+                           accept="image/jpeg,image/png,image/webp"
+                           required>
+                </div>
+            </div>
+
+            <div id="profileImagePreviewWrap" hidden>
+                <img id="profileImagePreview"
+                     alt="Selected profile photo preview"
+                     style="max-width:150px;max-height:150px;object-fit:cover;border-radius:12px;margin-top:12px;">
+            </div>
+
+            <div class="project-form-actions">
+                <button type="submit" id="uploadPhotoBtn">
+                    Upload Photo
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Resume -->
+    <div class="project-form-card">
+        <h3>Resume / CV</h3>
+        <p>Choose your resume in PDF format (maximum 5 MB).</p>
+
+        <p id="currentResume"></p>
+
+        <form id="resumeForm" enctype="multipart/form-data">
+            <div class="project-fields">
+                <div class="project-field full-width">
+                    <label for="resumeFile">Choose Resume PDF</label>
+                    <input type="file"
+                           id="resumeFile"
+                           name="resume"
+                           accept=".pdf,application/pdf"
+                           required>
+                </div>
+            </div>
+
+            <div class="project-form-actions">
+                <button type="submit" id="uploadResumeBtn">
+                    Upload Resume
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+      <!-- PROJECTS -->
+
+<section id="projects" class="content-section creative-section">
+  <div class="section-heading">
+    <div>
+      <p class="creative-eyebrow">02 / SHOWCASE</p>
+      <h2>Projects<span>.</span></h2>
+    </div>
+    <button type="button" id="showProjectForm" class="project-primary-btn">
+      + Add Project
+    </button>
+  </div>
+
+  <p id="projectStatus" class="project-status" role="status" aria-live="polite"></p>
+
+  <form id="projectForm" class="project-form" hidden>
+    <div class="project-form-heading">
+      <div>
+        <p class="creative-eyebrow">PORTFOLIO EDITOR</p>
+        <h3 id="projectFormTitle">Add a new project</h3>
+      </div>
+      <button type="button" id="cancelProjectForm" class="project-cancel-btn">
+        Cancel
+      </button>
+    </div>
+
+    <input type="hidden" id="projectId">
+
+    <div class="project-fields">
+      <div class="project-field">
+        <label for="projectTitle">Project title *</label>
+        <input id="projectTitle" maxlength="120" required
+          placeholder="e.g. Emotion Detection System">
+      </div>
+
+      <div class="project-field">
+        <label for="projectTechnologies">Technologies</label>
+        <input id="projectTechnologies"
+          placeholder="React, Node.js, MongoDB">
+        <small>Separate technologies with commas.</small>
+      </div>
+
+      <div class="project-field full-width">
+        <label for="projectDescription">Description *</label>
+        <textarea id="projectDescription" rows="4" maxlength="3000" required
+          placeholder="Describe what your project does..."></textarea>
+      </div>
+
+      <div class="project-field full-width">
+        <label for="projectImage">Image URL (optional)</label>
+        <input id="projectImage" type="url" maxlength="1000"
+          placeholder="https://example.com/project-image.jpg">
+      </div>
+
+      <div class="project-field">
+        <label for="projectLiveLink">Live demo URL (optional)</label>
+        <input id="projectLiveLink" type="url" maxlength="1000"
+          placeholder="https://your-demo.example">
+      </div>
+
+      <div class="project-field">
+        <label for="projectGithubLink">GitHub URL (optional)</label>
+        <input id="projectGithubLink" type="url" maxlength="1000"
+          placeholder="https://github.com/username/project">
+      </div>
+
+      <label class="project-featured-option">
+        <input id="projectFeatured" type="checkbox">
+        <span>Feature this project</span>
+      </label>
+    </div>
+
+    <div class="project-form-actions">
+      <button type="submit" id="saveProjectBtn" class="project-primary-btn">
+        Save Project
+      </button>
+      <button type="button" id="cancelProjectFormBottom" class="project-cancel-btn">
+        Cancel
+      </button>
+    </div>
+  </form>
+
+  <div class="project-list-heading">
+    <h3>Your projects</h3>
+    <span id="projectCount">0 projects</span>
+  </div>
+
+  <div id="projectsList" class="projects-list">
+    <p class="project-empty">Loading projects...</p>
+  </div>
+</section>
+
+
+      <!-- SKILLS -->
+    
+<section id="skills" class="content-section creative-section">
+  <div class="section-heading">
+    <div>
+      <p class="creative-eyebrow">03 / EXPERTISE</p>
+      <h2>Skills<span>.</span></h2>
+    </div>
+    <button type="button" id="showSkillForm" class="project-primary-btn">
+      + Add Skill
+    </button>
+  </div>
+
+  <p id="skillStatus" class="project-status" role="status" aria-live="polite"></p>
+
+  <form id="skillForm" class="project-form" hidden>
+    <div class="project-form-heading">
+      <div>
+        <p class="creative-eyebrow">SKILL EDITOR</p>
+        <h3 id="skillFormTitle">Add a new skill</h3>
+      </div>
+      <button type="button" id="cancelSkillForm" class="project-cancel-btn">
+        Cancel
+      </button>
+    </div>
+
+    <input type="hidden" id="skillId">
+
+    <div class="project-fields">
+      <div class="project-field">
+        <label for="skillName">Skill name *</label>
+        <input id="skillName" maxlength="100" required
+          placeholder="e.g. React.js">
+      </div>
+
+      <div class="project-field">
+        <label for="skillCategory">Category</label>
+        <input id="skillCategory" maxlength="100"
+          placeholder="e.g. Frontend, Backend, Database">
+      </div>
+      
+<div class="project-field">
+  <label for="skillType">Skill Type</label>
+  <select id="skillType">
+    <option value="category">Category Skill</option>
+    <option value="technical">Technical Skill (%)</option>
+    <option value="tool">Tool & Technology</option>
+  </select>
+</div>
+
+<div class="project-field" id="skillPercentageField" hidden>
+  <label for="skillPercentage">Percentage (0–100)</label>
+  <input id="skillPercentage" type="number"
+    min="0" max="100" step="1"
+    placeholder="e.g. 85">
+</div>
+
+
+      <div class="project-field">
+        <label for="skillIcon">Icon / Logo URL (optional)</label>
+        <input id="skillIcon" type="url" maxlength="1000"
+          placeholder="https://example.com/react.svg">
+      </div>
+    </div>
+
+    <div class="project-form-actions">
+      <button type="submit" id="saveSkillBtn" class="project-primary-btn">
+        Save Skill
+      </button>
+      <button type="button" id="cancelSkillFormBottom" class="project-cancel-btn">
+        Cancel
+      </button>
+    </div>
+  </form>
+
+  <div class="project-list-heading">
+    <h3>Your skills</h3>
+    <span id="skillCount">0 skills</span>
+  </div>
+
+  <div id="skillsList" class="skills-list">
+    <p class="project-empty">Loading skills...</p>
+  </div>
+</section>
+
+
+      <!-- EXPERIENCE -->
+      
+<section id="experience" class="content-section creative-section">
+  <div class="section-heading">
+    <div>
+      <p class="creative-eyebrow">04 / CAREER JOURNEY</p>
+      <h2>Experience<span>.</span></h2>
+    </div>
+    <button type="button" id="showExperienceForm" class="project-primary-btn">
+      + Add Experience
+    </button>
+  </div>
+
+  <p id="experienceStatus" class="project-status" role="status" aria-live="polite"></p>
+
+  <form id="experienceForm" class="project-form" hidden>
+    <div class="project-form-heading">
+      <div>
+        <p class="creative-eyebrow">EXPERIENCE EDITOR</p>
+        <h3 id="experienceFormTitle">Add experience</h3>
+      </div>
+      <button type="button" id="cancelExperienceForm" class="project-cancel-btn">
+        Cancel
+      </button>
+    </div>
+
+    <input type="hidden" id="experienceId">
+
+    <div class="project-fields">
+      <div class="project-field">
+        <label for="experienceRole">Job role *</label>
+        <input id="experienceRole" maxlength="150" required
+          placeholder="e.g. MERN Stack Developer Intern">
+      </div>
+
+      <div class="project-field">
+        <label for="experienceCompany">Company *</label>
+        <input id="experienceCompany" maxlength="150" required
+          placeholder="e.g. Visital Tech">
+      </div>
+
+      <div class="project-field">
+        <label for="experienceDuration">Duration *</label>
+        <input id="experienceDuration" maxlength="100" required
+          placeholder="e.g. 2026 - Present">
+      </div>
+
+      <div class="project-field">
+        <label for="experienceIcon">Icon</label>
+        <select id="experienceIcon">
+          <option value="code">Code / Developer</option>
+          <option value="brain">AI / Machine Learning</option>
+          <option value="briefcase">General / Work</option>
+          <option value="database">Database</option>
+          <option value="graduation-cap">Training / Education</option>
+        </select>
+      </div>
+
+      <div class="project-field full-width">
+        <label for="experienceDescription">Description *</label>
+        <textarea id="experienceDescription" rows="4" maxlength="3000" required
+          placeholder="Describe your responsibilities and what you learned..."></textarea>
+      </div>
+
+      <div class="project-field full-width">
+        <label for="experienceTechnologies">Technologies / Skills</label>
+        <input id="experienceTechnologies" maxlength="1000"
+          placeholder="React.js, Node.js, Express.js, MongoDB">
+        <small>Separate each technology with a comma.</small>
+      </div>
+    </div>
+
+    <div class="project-form-actions">
+      <button type="submit" id="saveExperienceBtn" class="project-primary-btn">
+        Save Experience
+      </button>
+      <button type="button" id="cancelExperienceFormBottom" class="project-cancel-btn">
+        Cancel
+      </button>
+    </div>
+  </form>
+
+  <div class="project-list-heading">
+    <h3>Your career journey</h3>
+    <span id="experienceCount">0 experiences</span>
+  </div>
+
+  <div id="experiencesList" class="experiences-list">
+    <p class="project-empty">Loading experience...</p>
+  </div>
+</section>
+
+
+      <!-- EDUCATION -->
+     
+<section id="education" class="content-section creative-section">
+  <div class="section-heading">
+    <div>
+      <p class="creative-eyebrow">05 / LEARNING</p>
+      <h2>Education<span>.</span></h2>
+    </div>
+    <button type="button" id="showEducationForm" class="project-primary-btn">
+      + Add Education
+    </button>
+  </div>
+
+  <p id="educationStatus" class="project-status" role="status" aria-live="polite"></p>
+
+  <form id="educationForm" class="project-form" hidden>
+    <div class="project-form-heading">
+      <div>
+        <p class="creative-eyebrow">EDUCATION EDITOR</p>
+        <h3 id="educationFormTitle">Add education</h3>
+      </div>
+      <button type="button" id="cancelEducationForm" class="project-cancel-btn">
+        Cancel
+      </button>
+    </div>
+
+    <input type="hidden" id="educationId">
+
+    <div class="project-fields">
+      <div class="project-field">
+        <label for="educationDegree">Degree / Qualification *</label>
+        <input id="educationDegree" maxlength="150" required
+          placeholder="e.g. B.Tech in CSE (AI)">
+      </div>
+
+      <div class="project-field">
+        <label for="educationInstitution">College / Institution *</label>
+        <input id="educationInstitution" maxlength="200" required
+          placeholder="e.g. GIFT College">
+      </div>
+
+      <div class="project-field">
+        <label for="educationDuration">Duration / Passing year *</label>
+        <input id="educationDuration" maxlength="100" required
+          placeholder="e.g. 2023 - 2027">
+      </div>
+
+      <div class="project-field">
+        <label for="educationGrade">Grade / Percentage</label>
+        <input id="educationGrade" maxlength="100"
+          placeholder="e.g. 65.5% or CGPA">
+      </div>
+      
+<div class="project-field">
+  <label for="educationSpecialization">Specialization</label>
+  <input id="educationSpecialization" maxlength="200"
+    placeholder="e.g. AI & Machine Learning">
+</div>
+
+
+      <div class="project-field full-width">
+        <label for="educationDescription">Description (optional)</label>
+        <textarea id="educationDescription" rows="4" maxlength="2000"
+          placeholder="Specialization, coursework, achievements..."></textarea>
+      </div>
+    </div>
+
+    <div class="project-form-actions">
+      <button type="submit" id="saveEducationBtn" class="project-primary-btn">
+        Save Education
+      </button>
+      <button type="button" id="cancelEducationFormBottom" class="project-cancel-btn">
+        Cancel
+      </button>
+    </div>
+  </form>
+
+  <div class="project-list-heading">
+    <h3>Your education</h3>
+    <span id="educationCount">0 records</span>
+  </div>
+
+  <div id="educationList" class="education-list">
+    <p class="project-empty">Loading education...</p>
+  </div>
+</section>
+
+
+      <!-- CONTACT MESSAGES -->
+      
+<!-- CONTACT MESSAGES -->
+<section id="messages" class="content-section creative-section">
+  <div class="section-heading">
+    <div>
+      <p class="creative-eyebrow">06 / CONNECTIONS</p>
+      <h2>Messages<span>.</span></h2>
+    </div>
+
+    <button type="button" id="refreshMessagesBtn" class="refresh-messages-btn">
+  ↻ Refresh
+</button>
+  </div>
+
+  <p id="messagesStatus" class="project-status" role="status" aria-live="polite"></p>
+
+  <div class="project-list-heading">
+    <h3>Contact enquiries</h3>
+    <span id="messagesCount">0 messages</span>
+  </div>
+
+  <div id="messagesList" class="projects-list">
+    <p class="project-empty">Messages will appear here.</p>
+  </div>
+</section>
+
+
+
+      <footer class="creative-footer">
+        <span>© 2026 PARTHA GOUDU</span>
+        <span>DESIGNED TO CREATE <b>✳</b></span>
+      </footer>
+    </main>
+  </div>
+
+<script src="./admin.js" defer></script>
+</body>
+</html>

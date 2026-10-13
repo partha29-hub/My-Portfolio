@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login | Partha Goudu</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <main class="login-container">
+    <section class="login-card">
+      <div class="logo">PG<span>.</span></div>
+      <p class="eyebrow">PORTFOLIO CONTROL CENTER</p>
+      <h1>Welcome <span>Back</span></h1>
+      <p class="subtitle">Sign in to manage your portfolio.</p>
+
+      <form id="loginForm">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text"
+          placeholder="Enter admin username" autocomplete="username" required />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password"
+          placeholder="Enter admin password" autocomplete="current-password" required />
+
+        <p id="message" role="status" aria-live="polite"></p>
+
+        <button id="loginButton" type="submit">Sign In <span>→</span></button>
+      </form>
+
+      <a class="back-link" href="../../index.html">← Back to Portfolio</a>
+      <p class="footer">SECURE ADMIN ACCESS · PARTHA GOUDU</p>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -1,6 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const adminRoutes = require("./routes/adminRoutes");
+const projectRoutes = require("./routes/projectRoutes");
+const skillRoutes = require("./routes/skillRoutes");
+const experienceRoutes = require("./routes/experienceRoutes");
+const educationRoutes = require("./routes/educationRoutes");
+const Contact = require("./models/Contact");
+const profileRoutes = require("./routes/profileRoutes");
 require("dotenv").config();
 
 const app = express();
@@ -8,8 +15,8 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
-
-
+app.use("/uploads", express.static(require("path").join(__dirname, "uploads")));
+app.use("/api/profile", profileRoutes);
 // ===============================
 // MONGODB CONNECTION
 // ===============================
@@ -24,48 +31,6 @@ mongoose
         console.error(error);
     });
 
-
-// ===============================
-// CONTACT SCHEMA
-// ===============================
-
-const contactSchema = new mongoose.Schema(
-    {
-        name: {
-            type: String,
-            required: true,
-            trim: true
-        },
-
-        email: {
-            type: String,
-            required: true,
-            trim: true
-        },
-
-        subject: {
-            type: String,
-            required: true,
-            trim: true
-        },
-
-        message: {
-            type: String,
-            required: true,
-            trim: true
-        }
-    },
-    {
-        timestamps: true
-    }
-);
-
-
-// ===============================
-// CONTACT MODEL
-// ===============================
-
-const Contact = mongoose.model("Contact", contactSchema);
 
 
 // ===============================
@@ -138,7 +103,11 @@ app.post("/api/contact", async (req, res) => {
 // ===============================
 
 const PORT = process.env.PORT || 5000;
-
+app.use("/api/admin", adminRoutes);
+app.use("/api/projects", projectRoutes);
+app.use("/api/skills", skillRoutes);
+app.use("/api/experience", experienceRoutes);
+app.use("/api/education", educationRoutes);
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
