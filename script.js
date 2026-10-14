@@ -170,7 +170,7 @@ if (contactForm) {
         try {
 
             const response = await fetch(
-                "http://partha-portfolio-api.onrender.com/api/contact",
+                "https://partha-portfolio-api.onrender.com/api/contact",
                 {
                     method: "POST",
 
@@ -536,8 +536,8 @@ document.addEventListener("DOMContentLoaded", () => {
    PROFILE SETTINGS - BACKEND CONNECTION
 ===================================== */
 
-const PROFILE_API_URL = "http://partha-portfolio-api.onrender.com/api/profile/public";
-const BACKEND_URL = "http://partha-portfolio-api.onrender.com";
+const PROFILE_API_URL = "https://partha-portfolio-api.onrender.com/api/profile/public";
+const BACKEND_URL = "https://partha-portfolio-api.onrender.com";
 
 async function loadProfileFromBackend() {
     try {
