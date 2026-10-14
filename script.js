@@ -228,7 +228,7 @@ if (contactForm) {
    Existing CSS and HTML layout remain unchanged
 ========================================== */
 
-const API_BASE_URL = "http://partha-portfolio-api.onrender.com/api";
+const API_BASE_URL = "https://partha-portfolio-api.onrender.com/api";
 
 // Escape database text before inserting it into HTML
 function safeText(value) {
