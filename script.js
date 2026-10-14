@@ -170,7 +170,7 @@ if (contactForm) {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/contact",
+                "http://partha-portfolio-api.onrender.com/api/contact",
                 {
                     method: "POST",
 
@@ -228,7 +228,7 @@ if (contactForm) {
    Existing CSS and HTML layout remain unchanged
 ========================================== */
 
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "http://partha-portfolio-api.onrender.com/api";
 
 // Escape database text before inserting it into HTML
 function safeText(value) {
@@ -536,8 +536,8 @@ document.addEventListener("DOMContentLoaded", () => {
    PROFILE SETTINGS - BACKEND CONNECTION
 ===================================== */
 
-const PROFILE_API_URL = "http://localhost:5000/api/profile/public";
-const BACKEND_URL = "http://localhost:5000";
+const PROFILE_API_URL = "http://partha-portfolio-api.onrender.com/api/profile/public";
+const BACKEND_URL = "http://partha-portfolio-api.onrender.com";
 
 async function loadProfileFromBackend() {
     try {
