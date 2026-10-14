@@ -171,5 +171,41 @@ router.put("/:id", authMiddleware, async (req, res) => {
   }
 });
 
+/* DELETE: Remove skill (admin only) */
+router.delete("/:id", authMiddleware, async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    if (!/^[a-fA-F0-9]{24}$/.test(id)) {
+      return res.status(400).json({
+        success: false,
+        message: "Invalid skill ID."
+      });
+    }
+
+    const skill = await Skill.findByIdAndDelete(id);
+
+    if (!skill) {
+      return res.status(404).json({
+        success: false,
+        message: "Skill not found."
+      });
+    }
+
+    return res.json({
+      success: true,
+      message: "Skill deleted successfully.",
+      skill
+    });
+  } catch (error) {
+    console.error("Delete skill error:", error);
+
+    return res.status(500).json({
+      success: false,
+      message: "Unable to delete skill."
+    });
+  }
+});
+
 
 module.exports = router;
