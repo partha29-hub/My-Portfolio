@@ -1,5 +1,5 @@
-const API_BASE = "http://partha-portfolio-api.onrender.com/api/admin";
-const PROJECTS_API = "http://partha-portfolio-api.onrender.com/api/projects";
+const API_BASE = "https://partha-portfolio-api.onrender.com/api/admin";
+const PROJECTS_API = "https://partha-portfolio-api.onrender.com/api/projects";
 const loginForm = document.getElementById("loginForm");
 const isDashboard = window.location.pathname.endsWith("dashboard.html");
 // ==============================
@@ -375,7 +375,7 @@ function initialiseSkills() {
 
   if (!form || !list) return;
 
-  const API = "http://partha-portfolio-api.onrender.com/api/skills";
+  const API = "https://partha-portfolio-api.onrender.com/api/skills";
   const status = document.getElementById("skillStatus");
   const saveButton = document.getElementById("saveSkillBtn");
 
@@ -701,7 +701,7 @@ function initialiseExperience() {
   const form = document.getElementById("experienceForm");
   const list = document.getElementById("experiencesList");
   if (!form || !list) return;
-  const API = "http://partha-portfolio-api.onrender.com/api/experience";
+  const API = "https://partha-portfolio-api.onrender.com/api/experience";
   const status = document.getElementById("experienceStatus");
   const saveButton = document.getElementById("saveExperienceBtn");
   let experiences = [];
@@ -942,7 +942,7 @@ function initialiseEducation() {
   const form = document.getElementById("educationForm");
   const list = document.getElementById("educationList");
   if (!form || !list) return;
-  const API = "http://partha-portfolio-api.onrender.com/api/education";
+  const API = "https://partha-portfolio-api.onrender.com/api/education";
   const status = document.getElementById("educationStatus");
   const saveButton = document.getElementById("saveEducationBtn");
   let records = [];
@@ -1337,7 +1337,7 @@ function initialiseProfile() {
         return;
     }
 
-    const API = "http://partha-portfolio-api.onrender.com/api/profile";
+    const API = "https://partha-portfolio-api.onrender.com/api/profile";
     const status = document.getElementById("profileStatus");
     const token = () => sessionStorage.getItem("adminToken");
 
@@ -1411,7 +1411,7 @@ function initialiseProfile() {
 
                     link.href = /^https?:\/\//i.test(resumePath)
                         ? resumePath
-                        : `http://partha-portfolio-api.onrender.com/uploads/${resumePath.split("/").pop()}`;
+                        : `https://partha-portfolio-api.onrender.com/uploads/${resumePath.split("/").pop()}`;
 
                     link.target = "_blank";
                     link.rel = "noopener noreferrer";
@@ -1431,7 +1431,7 @@ function initialiseProfile() {
                 if (preview && previewWrap) {
                     preview.src = /^https?:\/\//i.test(imagePath)
                         ? imagePath
-                        : `http://partha-portfolio-api.onrender.com/uploads/${imagePath.split("/").pop()}`;
+                        : `https://partha-portfolio-api.onrender.com/uploads/${imagePath.split("/").pop()}`;
 
                     previewWrap.hidden = false;
                 }
