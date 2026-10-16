@@ -13,23 +13,21 @@ require("dotenv").config();
 const app = express();
 
 // Middleware
+
 const allowedOrigins = [
-    process.env.FRONTEND_URL,
-    "http://localhost:5500",
-    "http://127.0.0.1:5500",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000"
-].filter(Boolean);
+  "https://my-portfolio-qfy7.onrender.com",
+  "http://localhost:5500",
+  "http://127.0.0.1:5500",
+  "http://localhost:3000",
+  "http://127.0.0.1:3000"
+];
 
 app.use(cors({
-    origin: (origin, callback) => {
-        if (!origin || allowedOrigins.includes(origin)) {
-            return callback(null, true);
-        }
+  origin: allowedOrigins,
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
-        return callback(new Error("Origin not allowed by CORS"));
-    }
-}));    
 app.use(express.json());
 app.use("/uploads", express.static(require("path").join(__dirname, "uploads")));
 app.use("/api/profile", profileRoutes);
